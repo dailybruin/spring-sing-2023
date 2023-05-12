@@ -4,7 +4,7 @@ import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Landing from './components/Landing';
-import background from './images/background.svg'
+import background from './images/backgroundnew.svg'
 
 function App() {
   const [ data, setData ] = useState(null);
@@ -24,16 +24,16 @@ function App() {
   
   const Container = styled.div`
     background-image: url(${background});
-    /* height: 5000px; */
   `
 
   return data && (
     <div className="App">
-      <Container>
         <Header/>
           <Landing landing_image={data.landing_image} landing_credits={data.landing_credits} />
+          <Container>
+            
+          </Container>
         <Footer/>
-      </Container>
     </div>
   );
 }
