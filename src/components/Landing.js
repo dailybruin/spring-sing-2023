@@ -14,16 +14,16 @@ const CreditsContainer = styled.img`
     position: absolute;
     bottom: -13em;
     right: 1em;
-    width: 20em;
+    width: 18em;
 `
 
 const Credits = styled.div`
     position: relative;
     float: right;
     color: black;
-    margin-right: 15px;
-    padding-top: 1em;
-    font-size: 18px;
+    right: 2.5em;
+    padding-top: 1.5em;
+    font-size: 15px;
     font-family: 'Poppins', sans-serif;
     ${mediaQueries.mobile} {
         font-size: 14px;
