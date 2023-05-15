@@ -70,7 +70,7 @@ color: #FFFFFF;
 
 const ArticleCard = (props) => { //replace <container> with <> 
     return (
-        <Container>   
+        <>   
           {props.article_float === "black" && (<Background src={VinylBlack} />)}
           {props.article_float === "green" && (<Background src={VinylGreen} />)}
           {props.article_float === "brown" && (<Background src={VinylBrown} />)}
@@ -83,7 +83,7 @@ const ArticleCard = (props) => { //replace <container> with <>
             <Title href={props.article_url}>{props.article_title}</Title>
             <ByLine>{props.article_byline}</ByLine>
           </a>
-        </Container>
+        </>
     )
 }
 export default ArticleCard
