@@ -71,12 +71,12 @@ color: #FFFFFF;
 const ArticleCard = (props) => { //replace <container> with <> 
     return (
         <>   
-          {props.article_float === "black" && (<Background src={VinylBlack} />)}
-          {props.article_float === "green" && (<Background src={VinylGreen} />)}
-          {props.article_float === "brown" && (<Background src={VinylBrown} />)}
-          {props.article_float === "teal" && (<Background src={VinylTeal} />)}
-          {props.article_float === "maroon" && (<Background src={VinylMaroon} />)}
-          {props.article_float === "purple" && (<Background src={VinylPurple} />)}
+          {props.article_color === "black" && (<Background src={VinylBlack} />)}
+          {props.article_color === "green" && (<Background src={VinylGreen} />)}
+          {props.article_color === "brown" && (<Background src={VinylBrown} />)}
+          {props.article_color === "teal" && (<Background src={VinylTeal} />)}
+          {props.article_color === "maroon" && (<Background src={VinylMaroon} />)}
+          {props.article_color === "purple" && (<Background src={VinylPurple} />)}
 
           <a href={props.article_url}>  
             <Image src={props.article_image} />
