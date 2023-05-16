@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
+import {isMobile} from 'react-device-detect';
 import styled from 'styled-components';
 import './App.css';
+
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Landing from './components/Landing';
@@ -27,16 +29,45 @@ function App() {
     background-image: url(${background});
   `
 
-  return data && (
-    <div className="App">
+  if (isMobile) 
+  {
+    return data && (
+      <div className="App">
         <Header/>
           <Landing landing_image={data.landing_image} landing_credits={data.landing_credits}/>
           <Container>
             <MobileGrid stories={all_stories}/>
           </Container>
         <Footer/>
-    </div>
-  );
+      </div>
+    )
+
+  }
+
+  else 
+  {
+    return data && (
+      <div className="App">
+        <Header/>
+          <Landing landing_image={data.landing_image} landing_credits={data.landing_credits}/>
+          <Container>
+            YOU ARE ON DESKTOP VIEW
+          </Container>
+        <Footer/>
+      </div>
+    )
+  }
+
+  // return data && (
+  //   <div className="App">
+  //       <Header/>
+  //         <Landing landing_image={data.landing_image} landing_credits={data.landing_credits}/>
+  //         <Container>
+  //           <MobileGrid stories={all_stories}/>
+  //         </Container>
+  //       <Footer/>
+  //   </div>
+  // );
 }
 
 export default App;
