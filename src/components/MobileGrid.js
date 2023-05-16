@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import React from "react";
-import ArticleCard from "./ArticleCard";
+import MobileArticleCard from "./MobileArticleCard";
 
 const OuterContainer = styled.div`
   position: relative;
@@ -68,150 +68,150 @@ const Shelf = styled.div`
 `;
 
 export default function MobileGrid(props) {
-  console.log(props.stories);
+  console.log(props.stories[0].article_url);
   return (
     <OuterContainer>
       <Container1>
         <Box>
-          <ArticleCard>
+          <MobileArticleCard>
             article_title = {props.stories[0].article_title}
             article_image = {props.stories[0].article_image}
             article_url = {props.stories[0].article_url}
             article_byline = {props.stories[0].article_byline}
             article_color = {props.stories[0].article_color}
-          </ArticleCard>
+          </MobileArticleCard>
         </Box>
         <Shelf></Shelf>
       </Container1>
       <Container2>
         <LeftBox>
-          <ArticleCard>
+          <MobileArticleCard>
             article_title = {props.stories[1].article_title}
             article_image = {props.stories[1].article_image}
             article_url = {props.stories[1].article_url}
             article_byline = {props.stories[1].article_byline}
             article_color = {props.stories[1].article_color}
-          </ArticleCard>
+          </MobileArticleCard>
         </LeftBox>
         <RightBox>
-          <ArticleCard>
+          <MobileArticleCard>
             article_title = {props.stories[2].article_title}
             article_image = {props.stories[2].article_image}
             article_url = {props.stories[2].article_url}
             article_byline = {props.stories[2].article_byline}
             article_color = {props.stories[2].article_color}
-          </ArticleCard>
+          </MobileArticleCard>
         </RightBox>
         <Shelf></Shelf>
       </Container2>
       <Container1>
         <Box>
-          <ArticleCard>
+          <MobileArticleCard>
             article_title = {props.stories[3].article_title}
             article_image = {props.stories[3].article_image}
             article_url = {props.stories[3].article_url}
             article_byline = {props.stories[3].article_byline}
             article_color = {props.stories[3].article_color}
-          </ArticleCard>
+          </MobileArticleCard>
         </Box>
         <Shelf></Shelf>
       </Container1>
       <Container2>
         <LeftBox>
-          <ArticleCard>
+          <MobileArticleCard>
             article_title = {props.stories[4].article_title}
             article_image = {props.stories[4].article_image}
             article_url = {props.stories[4].article_url}
             article_byline = {props.stories[4].article_byline}
             article_color = {props.stories[4].article_color}
-          </ArticleCard>
+          </MobileArticleCard>
         </LeftBox>
         <RightBox>
-          <ArticleCard>
+          <MobileArticleCard>
             article_title = {props.stories[5].article_title}
             article_image = {props.stories[5].article_image}
             article_url = {props.stories[5].article_url}
             article_byline = {props.stories[5].article_byline}
             article_color = {props.stories[5].article_color}
-          </ArticleCard>
+          </MobileArticleCard>
         </RightBox>
         <Shelf></Shelf>
       </Container2>
       <Container1>
         <Box>
-          <ArticleCard>
+          <MobileArticleCard>
             article_title = {props.stories[6].article_title}
             article_image = {props.stories[6].article_image}
             article_url = {props.stories[6].article_url}
             article_byline = {props.stories[6].article_byline}
             article_color = {props.stories[6].article_color}
-          </ArticleCard>
+          </MobileArticleCard>
         </Box>
         <Shelf></Shelf>
       </Container1>
       <Container2>
         <LeftBox>
-          <ArticleCard>
+          <MobileArticleCard>
             article_title = {props.stories[7].article_title}
             article_image = {props.stories[7].article_image}
             article_url = {props.stories[7].article_url}
             article_byline = {props.stories[7].article_byline}
             article_color = {props.stories[7].article_color}
-          </ArticleCard>
+          </MobileArticleCard>
         </LeftBox>
         <RightBox>
-          <ArticleCard>
+          <MobileArticleCard>
             article_title = {props.stories[8].article_title}
             article_image = {props.stories[8].article_image}
             article_url = {props.stories[8].article_url}
             article_byline = {props.stories[8].article_byline}
             article_color = {props.stories[8].article_color}
-          </ArticleCard>
+          </MobileArticleCard>
         </RightBox>
         <Shelf></Shelf>
       </Container2>
       <Container1>
         <Box>
-          <ArticleCard>
+          <MobileArticleCard>
             article_title = {props.stories[9].article_title}
             article_image = {props.stories[9].article_image}
             article_url = {props.stories[9].article_url}
             article_byline = {props.stories[9].article_byline}
             article_color = {props.stories[9].article_color}
-          </ArticleCard>
+          </MobileArticleCard>
         </Box>
         <Shelf></Shelf>
       </Container1>
       <Container2>
         <LeftBox>
-          <ArticleCard>
+          <MobileArticleCard>
             article_title = {props.stories[10].article_title}
             article_image = {props.stories[10].article_image}
             article_url = {props.stories[10].article_url}
             article_byline = {props.stories[10].article_byline}
             article_color = {props.stories[10].article_color}
-          </ArticleCard>
+          </MobileArticleCard>
         </LeftBox>
         <RightBox>
-          <ArticleCard>
+          <MobileArticleCard>
             article_title = {props.stories[11].article_title}
             article_image = {props.stories[11].article_image}
             article_url = {props.stories[11].article_url}
             article_byline = {props.stories[11].article_byline}
             article_color = {props.stories[11].article_color}
-          </ArticleCard>
+          </MobileArticleCard>
         </RightBox>
         <Shelf></Shelf>
       </Container2>
       <Container1>
         <Box>
-          <ArticleCard>
+          <MobileArticleCard>
             article_title = {props.stories[12].article_title}
             article_image = {props.stories[12].article_image}
             article_url = {props.stories[12].article_url}
             article_byline = {props.stories[12].article_byline}
             article_color = {props.stories[12].article_color}
-          </ArticleCard>
+          </MobileArticleCard>
         </Box>
         <Shelf></Shelf>
       </Container1>

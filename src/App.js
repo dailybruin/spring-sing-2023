@@ -4,6 +4,7 @@ import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Landing from './components/Landing';
+import LandingCredits from "./components/LandingCredits";
 import background from './images/backgroundnew.svg'
 import MobileGrid from "./components/MobileGrid";
 
@@ -32,7 +33,7 @@ function App() {
   return data && (
     <div className="App">
         <Header/>
-          <Landing landing_image={data.landing_image} landing_credits={data.landing_credits} />
+          <Landing landing_image={data.landing_image} landing_credits={data.landing_credits}/>
           <Container>
             <MobileGrid stories={all_stories}/>
           </Container>
