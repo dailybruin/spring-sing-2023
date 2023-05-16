@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import React from "react";
-import ArticleCard from "./ArticleCards";
+import ArticleCard from "./ArticleCard";
 
 const OuterContainer = styled.div`
   position: relative;
@@ -8,6 +8,7 @@ const OuterContainer = styled.div`
   width: 90%;
   height: auto;
   margin: auto;
+  padding-top: 3em;
 `;
 
 const Container1 = styled.div`
@@ -21,7 +22,7 @@ const Container1 = styled.div`
 
 const Container2 = styled.div`
   position: relative;
-  display: block
+  display: block;
   width: 100%;
   height: 200px;
   margin-bottom: 70px;
@@ -76,6 +77,7 @@ export default function MobileGrid(props) {
             article_image = {props.stories[0].article_image}
             article_url = {props.stories[0].article_url}
             article_byline = {props.stories[0].article_byline}
+            article_color = {props.stories[0].article_color}
           </ArticleCard>
         </Box>
         <Shelf></Shelf>
@@ -87,6 +89,7 @@ export default function MobileGrid(props) {
             article_image = {props.stories[1].article_image}
             article_url = {props.stories[1].article_url}
             article_byline = {props.stories[1].article_byline}
+            article_color = {props.stories[1].article_color}
           </ArticleCard>
         </LeftBox>
         <RightBox>
@@ -95,6 +98,7 @@ export default function MobileGrid(props) {
             article_image = {props.stories[2].article_image}
             article_url = {props.stories[2].article_url}
             article_byline = {props.stories[2].article_byline}
+            article_color = {props.stories[2].article_color}
           </ArticleCard>
         </RightBox>
         <Shelf></Shelf>
@@ -106,6 +110,7 @@ export default function MobileGrid(props) {
             article_image = {props.stories[3].article_image}
             article_url = {props.stories[3].article_url}
             article_byline = {props.stories[3].article_byline}
+            article_color = {props.stories[3].article_color}
           </ArticleCard>
         </Box>
         <Shelf></Shelf>
@@ -117,6 +122,7 @@ export default function MobileGrid(props) {
             article_image = {props.stories[4].article_image}
             article_url = {props.stories[4].article_url}
             article_byline = {props.stories[4].article_byline}
+            article_color = {props.stories[4].article_color}
           </ArticleCard>
         </LeftBox>
         <RightBox>
@@ -125,6 +131,7 @@ export default function MobileGrid(props) {
             article_image = {props.stories[5].article_image}
             article_url = {props.stories[5].article_url}
             article_byline = {props.stories[5].article_byline}
+            article_color = {props.stories[5].article_color}
           </ArticleCard>
         </RightBox>
         <Shelf></Shelf>
@@ -136,6 +143,7 @@ export default function MobileGrid(props) {
             article_image = {props.stories[6].article_image}
             article_url = {props.stories[6].article_url}
             article_byline = {props.stories[6].article_byline}
+            article_color = {props.stories[6].article_color}
           </ArticleCard>
         </Box>
         <Shelf></Shelf>
@@ -147,6 +155,7 @@ export default function MobileGrid(props) {
             article_image = {props.stories[7].article_image}
             article_url = {props.stories[7].article_url}
             article_byline = {props.stories[7].article_byline}
+            article_color = {props.stories[7].article_color}
           </ArticleCard>
         </LeftBox>
         <RightBox>
@@ -155,6 +164,7 @@ export default function MobileGrid(props) {
             article_image = {props.stories[8].article_image}
             article_url = {props.stories[8].article_url}
             article_byline = {props.stories[8].article_byline}
+            article_color = {props.stories[8].article_color}
           </ArticleCard>
         </RightBox>
         <Shelf></Shelf>
@@ -166,6 +176,7 @@ export default function MobileGrid(props) {
             article_image = {props.stories[9].article_image}
             article_url = {props.stories[9].article_url}
             article_byline = {props.stories[9].article_byline}
+            article_color = {props.stories[9].article_color}
           </ArticleCard>
         </Box>
         <Shelf></Shelf>
@@ -177,6 +188,7 @@ export default function MobileGrid(props) {
             article_image = {props.stories[10].article_image}
             article_url = {props.stories[10].article_url}
             article_byline = {props.stories[10].article_byline}
+            article_color = {props.stories[10].article_color}
           </ArticleCard>
         </LeftBox>
         <RightBox>
@@ -185,6 +197,7 @@ export default function MobileGrid(props) {
             article_image = {props.stories[11].article_image}
             article_url = {props.stories[11].article_url}
             article_byline = {props.stories[11].article_byline}
+            article_color = {props.stories[11].article_color}
           </ArticleCard>
         </RightBox>
         <Shelf></Shelf>
@@ -196,6 +209,7 @@ export default function MobileGrid(props) {
             article_image = {props.stories[12].article_image}
             article_url = {props.stories[12].article_url}
             article_byline = {props.stories[12].article_byline}
+            article_color = {props.stories[12].article_color}
           </ArticleCard>
         </Box>
         <Shelf></Shelf>

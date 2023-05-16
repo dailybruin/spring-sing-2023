@@ -5,6 +5,9 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Landing from './components/Landing';
 import background from './images/backgroundnew.svg'
+import MobileGrid from "./components/MobileGrid";
+
+import VinylGreen from "./images/vinyl_green.svg"
 
 function App() {
   const [ data, setData ] = useState(null);
@@ -31,7 +34,8 @@ function App() {
         <Header/>
           <Landing landing_image={data.landing_image} landing_credits={data.landing_credits} />
           <Container>
-            
+            <MobileGrid stories={all_stories}/>
+            <img src = {VinylGreen}/>
           </Container>
         <Footer/>
     </div>
