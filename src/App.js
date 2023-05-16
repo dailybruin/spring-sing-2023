@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Landing from './components/Landing';
 import background from './images/backgroundnew.svg'
+import MiddleShelf from './components/MiddleShelf'
 
 function App() {
   const [ data, setData ] = useState(null);
@@ -32,7 +33,9 @@ function App() {
           <Landing landing_image={data.landing_image} landing_credits={data.landing_credits} />
           <Container>
             
-          </Container>
+          </Container> 
+
+          <MiddleShelf articles={data.middle_stories}/>
         <Footer/>
     </div>
   );
