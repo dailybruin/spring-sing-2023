@@ -35,6 +35,7 @@ const Box = styled.div`
   margin: auto;
   // border: 1px solid orange;
   margin-top: 4.5%;
+  position: relative;
 `;
 
 const LeftBox = styled.div`

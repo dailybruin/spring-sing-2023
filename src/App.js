@@ -35,7 +35,6 @@ function App() {
           <Landing landing_image={data.landing_image} landing_credits={data.landing_credits} />
           <Container>
             <MobileGrid stories={all_stories}/>
-            <img src = {VinylGreen}/>
           </Container>
         <Footer/>
     </div>

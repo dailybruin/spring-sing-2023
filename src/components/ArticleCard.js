@@ -11,7 +11,8 @@ const Container = styled.a`
   /* height: 600px;
   width: 600px; */
   height: 100%;
-  position: relative;
+  position: absolute;
+  bottom: 3em;
 `
 
 const Background = styled.img`
@@ -36,7 +37,7 @@ const Image = styled.img`
 const Info = styled.div`
   display: none;
   position: absolute;
-  /* left: 0.7em;
+  /* left: 0.6em;
   top: 2em;
   z-index: 15;
   height: 217px;
@@ -45,7 +46,7 @@ const Info = styled.div`
   ${Container}:hover & {
     display: inline-block;
     position: absolute;
-    left: 0.7em;
+    left: 0.6em;
     top: 2em;
     z-index: 15;
     height: 217px;
@@ -56,9 +57,9 @@ const Info = styled.div`
 const Title = styled.div`
   display: block;
   font-family: 'Modak';
-  font-size: 28px;
+  font-size: 30px;
   color: #FFFFFF;
-  line-height: 2em;
+  line-height: 1.3em;
   text-align: center;
 
 `
@@ -69,8 +70,9 @@ const ByLine = styled.div`
   font-style: normal;
   color: #FFFFFF;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 16px;
   text-align: center;
+  padding-top: 1em;
 `
 
 export default function ArticleCard(props) { 
@@ -104,7 +106,7 @@ export default function ArticleCard(props) {
           <Background src={getBackground(props.article_color)} />
           <Image src={props.article_image} />
           <Info>
-            <Title href={props.article_url}>ARTICLE TITLE</Title>
+            <Title href={props.article_url}>ARTICLE TITLE ARTICLE TITLE ARTICLE TITLE</Title>
             <ByLine> Article Byline</ByLine>
           </Info>
       </Container>
