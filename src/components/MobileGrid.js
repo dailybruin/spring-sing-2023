@@ -8,7 +8,8 @@ const OuterContainer = styled.div`
   width: 90%;
   height: auto;
   margin: auto;
-  padding-top: 3em;
+  padding-top: 5em;
+  padding-bottom: 8em;
 `;
 
 const Container1 = styled.div`
@@ -203,7 +204,7 @@ export default function MobileGrid(props) {
         </RightBox>
         <Shelf></Shelf>
       </Container2>
-      <Container1>
+      <Container1 style ={{"margin-bottom": "0px"}}>
         <Box>
           <MobileArticleCard>
             article_title = {props.stories[12].article_title}

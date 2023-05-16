@@ -4,11 +4,8 @@ import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Landing from './components/Landing';
-import LandingCredits from "./components/LandingCredits";
 import background from './images/backgroundnew.svg'
 import MobileGrid from "./components/MobileGrid";
-
-import VinylGreen from "./images/vinyl_green.svg"
 
 function App() {
   const [ data, setData ] = useState(null);
