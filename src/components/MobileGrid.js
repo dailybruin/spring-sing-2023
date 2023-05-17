@@ -35,7 +35,7 @@ const Box = styled.div`
   height: 80%;
   margin: auto;
   // border: 1px solid orange;
-  margin-top: 4.5%;
+  margin-top: 1%;
   position: relative;
 `;
 

@@ -29,7 +29,8 @@ function App() {
     background-image: url(${background});
   `
 
-  if (isMobile) 
+  if (isMobile)
+  // if (true)  
   {
     return data && (
       <div className="App">
