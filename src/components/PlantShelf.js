@@ -10,7 +10,7 @@ const Container = styled.div`
     overflow: visible;
     height: 20em;
     margin-top: 10em;
-    margin-bottom: 10em;
+    margin-bottom: 20em;
     /* margin-bottom: 225.5625em; */
 `
 

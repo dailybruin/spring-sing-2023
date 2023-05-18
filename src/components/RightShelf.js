@@ -18,11 +18,10 @@ const Container = styled.div`
     position: relative;
     overflow: visible;
     height: 20em;
-    margin-top: 10em;
+    margin-top: 15em;
     margin-bottom: 10em;
     /* margin-bottom: 225.5625em; */
 `
-
 // const ShelfContainer = styled.div`
 //   width: 100%;
 //   display: flex;
