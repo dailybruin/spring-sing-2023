@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import './App.css';
 
 import Header from './components/Header';
+import PlantShelf from './components/PlantShelf';
 import Footer from './components/Footer';
 import Landing from './components/Landing';
 import background from './images/backgroundnew.svg'
@@ -60,6 +61,7 @@ function App() {
           <Landing landing_image={data.landing_image} landing_credits={data.landing_credits}/>
           <Container>
             YOU ARE ON DESKTOP VIEW
+            <PlantShelf articles={data.shelf_stories}/>
             <RightShelf articles={data.right_stories_1} />
             <LeftShelf articles={data.left_stories} />
           </Container>
