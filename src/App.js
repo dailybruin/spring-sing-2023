@@ -11,6 +11,7 @@ import background from './images/backgroundnew.svg'
 import MobileGrid from "./components/MobileGrid";
 import RightShelf from "./components/RightShelf"
 import LeftShelf from "./components/LeftShelf";
+import Blurb from './components/Blurb';
 
 function App() {
   const [data, setData] = useState(null);
@@ -61,6 +62,7 @@ function App() {
           <Landing landing_image={data.landing_image} landing_credits={data.landing_credits}/>
           <Container>
             YOU ARE ON DESKTOP VIEW
+            <Blurb description_text={data.description_text}/>
             <PlantShelf articles={data.shelf_stories}/>
             <RightShelf articles={data.right_stories_1} />
             <LeftShelf articles={data.left_stories} />
