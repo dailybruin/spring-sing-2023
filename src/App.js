@@ -1,9 +1,4 @@
 import React, { useState, useEffect } from "react";
-import styled from "styled-components";
-import "./App.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import LeftShelf from "./components/LeftShelf";
 import {isMobile} from 'react-device-detect';
 import styled from 'styled-components';
 import './App.css';
@@ -14,6 +9,7 @@ import Landing from './components/Landing';
 import background from './images/backgroundnew.svg'
 import MobileGrid from "./components/MobileGrid";
 import RightShelf from "./components/RightShelf"
+import LeftShelf from "./components/LeftShelf";
 
 function App() {
   const [data, setData] = useState(null);
@@ -64,8 +60,8 @@ function App() {
           <Landing landing_image={data.landing_image} landing_credits={data.landing_credits}/>
           <Container>
             YOU ARE ON DESKTOP VIEW
-            <LeftShelf articles={data.left_stories} />
             <RightShelf articles={data.right_stories_1} />
+            <LeftShelf articles={data.left_stories} />
           </Container>
         <Footer/>
       </div>
