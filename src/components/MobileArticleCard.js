@@ -71,25 +71,26 @@ const ByLine = styled.div`
   padding-top: 1em;
 `
 
-export default function ArticleCard(props) { 
+export default function MobileArticleCard(props) { 
   function getBackground(color){
-    if (color == "black"){
+    console.log(props.children)
+    if (color === "black"){
         console.log(color)
         return VinylBlack;
     }
-    if (color == "green"){
+    if (color === "green"){
         return VinylGreen;
     }
-    if (color == "brown"){
+    if (color === "brown"){
       return VinylBrown;
     }
-    if (color == "teal"){
+    if (color === "teal"){
       return VinylTeal;
     }
-    if (color == "maroon"){
+    if (color === "maroon"){
       return VinylMaroon;
     }
-    if (color == "purple"){
+    if (color === "purple"){
       return VinylPurple;
     }
     else {
@@ -98,13 +99,13 @@ export default function ArticleCard(props) {
   }
 
   return (
-      <Container href={props.article_url}>   
-          <Background src={getBackground(props.article_color)} />
-          <Image src={props.article_image} />
-          <Info>
-            <Title>{props.article_title}</Title>
-            <ByLine> {props.article_byline}</ByLine>
-          </Info>
+      <Container href={props.children[5]}>   
+          <Background src={getBackground(props.children[9])} />
+          <Image src={props.children[3]} />
+        <Info>
+            <Title>{props.children[1]}</Title>
+            <ByLine> {props.children[7]}</ByLine>
+        </Info>
       </Container>
   )
 }

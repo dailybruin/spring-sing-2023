@@ -4,6 +4,16 @@ import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import LeftShelf from "./components/LeftShelf";
+import {isMobile} from 'react-device-detect';
+import styled from 'styled-components';
+import './App.css';
+
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Landing from './components/Landing';
+import background from './images/backgroundnew.svg'
+import MobileGrid from "./components/MobileGrid";
+import RightShelf from "./components/RightShelf"
 
 function App() {
   const [data, setData] = useState(null);
@@ -26,16 +36,52 @@ function App() {
     console.log(all_stories);
   }
 
-  return (
-    data && (
+  const Container = styled.div`
+    background-image: url(${background});
+  `
+
+  if (isMobile)
+  // if (true)
+  {
+    return data && (
       <div className="App">
-        <Header />
-        Hello Daily Bruin!
-        <LeftShelf articles={data.left_stories} />
-        <Footer />
+        <Header/>
+          <Landing landing_image={data.landing_image} landing_credits={data.landing_credits}/>
+          <Container>
+            <MobileGrid stories={all_stories}/>
+          </Container>
+        <Footer/>
       </div>
     )
-  );
+
+  }
+
+  else
+  {
+    return data && (
+      <div className="App">
+        <Header/>
+          <Landing landing_image={data.landing_image} landing_credits={data.landing_credits}/>
+          <Container>
+            YOU ARE ON DESKTOP VIEW
+            <LeftShelf articles={data.left_stories} />
+            <RightShelf articles={data.right_stories_1} />
+          </Container>
+        <Footer/>
+      </div>
+    )
+  }
+
+  // return data && (
+  //   <div className="App">
+  //       <Header/>
+  //         <Landing landing_image={data.landing_image} landing_credits={data.landing_credits}/>
+  //         <Container>
+  //           <MobileGrid stories={all_stories}/>
+  //         </Container>
+  //       <Footer/>
+  //   </div>
+  // );
 }
 
 export default App;
