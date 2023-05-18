@@ -12,7 +12,7 @@ const Container = styled.a`
   width: 600px; */
   height: 100%;
   position: absolute;
-  bottom: 3em;
+  bottom: 14em;
 `
 
 const Background = styled.img`

@@ -8,8 +8,9 @@ const Container = styled.div`
     max-width: 100vw;
     position: relative;
     overflow: visible;
-    margin-top: 120em;
-    margin-bottom: 225.5625em;
+    height: 20em;
+    margin-top: 20em;
+    /* margin-bottom: 225.5625em; */
 `
 
 const Grid = styled.div`
@@ -17,7 +18,7 @@ const Grid = styled.div`
   width: 55em;
   grid-template-columns: repeat(2, 1fr);
   overflow: visible;
-  margin-bottom: -20.116em;
+  /* margin-bottom: -20.116em; */
   margin-left: 4em;
 
   ${mediaQueries.mobile} {
@@ -32,7 +33,7 @@ const Grid = styled.div`
 const Shelf = styled.div`
   width: 80%;
   height: 2.25em;
-  margin-left: -0.01953125em;
+  /* margin-left: -0.01953125em; */
   background: #C08E5F;
   border: 2px solid #866B52;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);

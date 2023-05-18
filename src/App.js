@@ -64,6 +64,7 @@ function App() {
             <PlantShelf articles={data.shelf_stories}/>
             <RightShelf articles={data.right_stories_1} />
             <LeftShelf articles={data.left_stories} />
+            <RightShelf articles={data.right_stories_2} />
           </Container>
         <Footer/>
       </div>
