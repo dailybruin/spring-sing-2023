@@ -9,7 +9,8 @@ const Container = styled.div`
     position: relative;
     overflow: visible;
     height: 20em;
-    margin-top: 20em;
+    margin-top: 10em;
+    margin-bottom: 10em;
     /* margin-bottom: 225.5625em; */
 `
 
@@ -26,7 +27,7 @@ const Grid = styled.div`
     flex-direction: column;
     width: 90vw;
     margin: auto;
-    align-items: center;
+    /* align-items: center; */
   }
 `;
 
@@ -56,9 +57,11 @@ export default function PlantShelf(props) {
             <Grid>
             {props && props.articles
                   ? props.articles.map((item) => {
+                    // console.log(item)
                       return (
                           <ArticleCard
-                          article_float = "green"
+                          // article_float = "green"
+                          article_color={item.article_color}
                           article_title={item.article_title}
                           article_byline={item.article_byline}
                           article_image={item.article_image}
