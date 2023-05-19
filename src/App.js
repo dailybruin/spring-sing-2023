@@ -8,6 +8,7 @@ import PlantShelf from './components/PlantShelf';
 import Footer from './components/Footer';
 import Landing from './components/Landing';
 import background from './images/backgroundnew.svg'
+import MiddleShelf from './components/MiddleShelf'
 import MobileGrid from "./components/MobileGrid";
 import RightShelf from "./components/RightShelf"
 import LeftShelf from "./components/LeftShelf";
@@ -65,6 +66,7 @@ function App() {
             <Blurb description_text={data.description_text}/>
             <PlantShelf articles={data.shelf_stories}/>
             <RightShelf articles={data.right_stories_1} />
+            <MiddleShelf articles={data.middle_stories}/>
             <LeftShelf articles={data.left_stories} />
             <RightShelf articles={data.right_stories_2} />
           </Container>
