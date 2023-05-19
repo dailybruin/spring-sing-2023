@@ -11,7 +11,7 @@ const Container = styled.a`
   /* height: 600px;
   width: 600px; */
   height: 100%;
-  position: absolute;
+  position: relative;
   bottom: 14em;
 `
 

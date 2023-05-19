@@ -37,6 +37,8 @@ function App() {
 
   const Container = styled.div`
     background-image: url(${background});
+    background-size: cover;
+    height: fit-content;
   `
 
   if (isMobile)

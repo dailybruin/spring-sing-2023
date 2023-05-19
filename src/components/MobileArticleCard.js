@@ -16,8 +16,8 @@ const Container = styled.a`
 `
 
 const Background = styled.img`
-  height: 237px;
-  width: 310.96px;
+  height: 220px;
+  width: 290px;
   position: absolute;
   top: 0;
   left: 0;
@@ -25,8 +25,8 @@ const Background = styled.img`
 `
 
 const Image = styled.img`
-  height: 217px;
-  width: 214px;
+  height: 200px;
+  width: 198px;
   object-fit: cover;
   position: absolute;
   left: 0.7em;
@@ -43,8 +43,8 @@ const Info = styled.div`
     left: 0.7em;
     top: 0.25em;
     z-index: 15;
-    height: 217px;
-    width: 215px;
+    height: 200px;
+    width: 198px;
     background-color: rgba(255,255,255,0.5);
   }
 `
