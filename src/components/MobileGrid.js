@@ -36,6 +36,7 @@ const Box = styled.div`
   margin: auto;
   // border: 1px solid orange;
   margin-top: 1%;
+  margin-left: 1em;
   position: relative;
 `;
 
@@ -43,7 +44,7 @@ const LeftBox = styled.div`
   width: 40%;
   float: left;
   height: 80%;
-  margin-left: 5%;
+  margin-left: -4.5em;
   // border: 1px solid purple;
   margin-top: 4.5%;
 `;
@@ -52,7 +53,7 @@ const RightBox = styled.div`
   width: 40%;
   float: right;
   height: 80%;
-  margin-right: 5%;
+  margin-right: 6em;
   // border: 1px solid purple;
   margin-top: 4.5%;
 `;

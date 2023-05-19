@@ -12,12 +12,13 @@ const Container = styled.a`
   width: 600px; */
   height: 100%;
   position: absolute;
-  bottom: 3em;
+  bottom: -2.5em;
+  /* left: 2em; */
 `
 
 const Background = styled.img`
-  height: 220px;
-  width: 290px;
+  height: 140px;
+  width: 190.96px;
   position: absolute;
   top: 0;
   left: 0;
@@ -25,8 +26,8 @@ const Background = styled.img`
 `
 
 const Image = styled.img`
-  height: 200px;
-  width: 198px;
+  height: 125px;
+  width: 125px;
   object-fit: cover;
   position: absolute;
   left: 0.7em;
@@ -43,8 +44,8 @@ const Info = styled.div`
     left: 0.7em;
     top: 0.25em;
     z-index: 15;
-    height: 200px;
-    width: 198px;
+    height: 125px;
+    width: 125px;
     background-color: rgba(101,101,101,0.9);
   }
 `
@@ -52,7 +53,7 @@ const Info = styled.div`
 const Title = styled.div`
   display: block;
   font-family: 'Modak';
-  font-size: 22px;
+  font-size: 12px;
   color: #FFFFFF;
   padding-top: 1em;
   line-height: 1.3em;
@@ -66,7 +67,7 @@ const ByLine = styled.div`
   font-style: normal;
   color: #FFFFFF;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 8px;
   text-align: center;
   padding-top: 1em;
 `
