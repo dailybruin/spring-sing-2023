@@ -45,7 +45,7 @@ const Info = styled.div`
     z-index: 15;
     height: 200px;
     width: 198px;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(101,101,101,0.9);
   }
 `
 
