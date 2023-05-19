@@ -7,7 +7,7 @@ import Header from './components/Header';
 import PlantShelf from './components/PlantShelf';
 import Footer from './components/Footer';
 import Landing from './components/Landing';
-import background from './images/backgroundnew.svg'
+import background from './images/background.svg'
 import MiddleShelf from './components/MiddleShelf'
 import MobileGrid from "./components/MobileGrid";
 import RightShelf from "./components/RightShelf"
