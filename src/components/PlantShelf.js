@@ -10,7 +10,7 @@ const Container = styled.div`
     overflow: visible;
     height: 20em;
     margin-top: 10em;
-    margin-bottom: 20em;
+    /* margin-bottom: 20em; */
 `
 
 const Grid = styled.div`
@@ -28,6 +28,7 @@ const Records = styled.div`
   justify-content: flex-start;
   flex-direction: row;
   gap: 20em;
+  /* position: relative; */
 
 `
 
@@ -45,11 +46,10 @@ const Shelf = styled.div`
 
 export default function PlantShelf(props) {
   return (
-  <>     
-      <Container>
-            <Grid>
-              <Records>
-            {props && props.articles
+    <Container>
+          <Grid>
+            <Records>
+              {props && props.articles
                   ? props.articles.map((item) => {
                     console.log(item)
                       return (
@@ -63,13 +63,12 @@ export default function PlantShelf(props) {
                       );
                   })
               : null}
-              </Records>
-            </Grid>
-            <Shelf>
-            <h1></h1>
-            <img style={{"width": "15em", "float":"right", "margin-bottom": "-1.25em"}} src={Plant}/>
-          </Shelf>
-        </Container> 
-  </>
+            </Records>
+          </Grid>
+          <Shelf>
+          <h1></h1>
+          <img style={{"width": "15em", "float":"right", "margin-bottom": "-1.25em"}} src={Plant}/>
+        </Shelf>
+      </Container> 
   );
 }

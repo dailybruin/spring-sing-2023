@@ -37,16 +37,18 @@ function App() {
 
   const Container = styled.div`
     background-image: url(${background});
+    background-size: cover;
+    height: fit-content;
   `
 
   if (isMobile)
-  // if (true)
   {
     return data && (
       <div className="App">
         <Header/>
           <Landing landing_image={data.landing_image} landing_credits={data.landing_credits}/>
           <Container>
+            <Blurb description_text={data.description_text}/>
             <MobileGrid stories={all_stories}/>
           </Container>
         <Footer/>

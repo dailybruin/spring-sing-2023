@@ -11,7 +11,7 @@ const Container = styled.a`
   /* height: 600px;
   width: 600px; */
   height: 100%;
-  position: absolute;
+  position: relative;
   bottom: 14em;
 `
 
@@ -45,7 +45,7 @@ const Info = styled.div`
     z-index: 15;
     height: 217px;
     width: 215px;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(101,101,101,0.9);
   }
 `
 

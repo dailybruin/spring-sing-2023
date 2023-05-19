@@ -19,8 +19,6 @@ const Container = styled.div`
     overflow: visible;
     height: 20em;
     margin-top: 15em;
-    margin-bottom: 10em;
-    /* margin-bottom: 225.5625em; */
 `
 // const ShelfContainer = styled.div`
 //   width: 100%;
@@ -102,9 +100,7 @@ export default function RightShelf({ articles }) {
           })}
         </Records>
       </RecordsGrid>
-      {/* <ShelfContainer> */}
-        <Shelf />
-      {/* </ShelfContainer> */}
+      <Shelf />
     </Container>
   );
 }
