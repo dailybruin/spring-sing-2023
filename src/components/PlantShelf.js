@@ -11,30 +11,29 @@ const Container = styled.div`
     height: 20em;
     margin-top: 10em;
     margin-bottom: 20em;
-    /* margin-bottom: 225.5625em; */
 `
 
 const Grid = styled.div`
-  display: flex;
-  width: 55em;
-  grid-template-columns: repeat(2, 1fr);
-  overflow: visible;
-  /* margin-bottom: -20.116em; */
+  /* display: flex; */
+  width: 55vw;
+  float: left;
   margin-left: 4em;
+  gap: 20em;
 
-  ${mediaQueries.mobile} {
-    display: flex;
-    flex-direction: column;
-    width: 90vw;
-    margin: auto;
-    /* align-items: center; */
-  }
 `;
+
+const Records = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 20em;
+
+`
 
 const Shelf = styled.div`
   width: 80%;
   height: 2.25em;
-  /* margin-left: -0.01953125em; */
   background: #C08E5F;
   border: 2px solid #866B52;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -44,32 +43,27 @@ const Shelf = styled.div`
   align-items: center;
 `;
 
-/*<img style={{"width": "20%", "float":"left"}} src={LeftDivider}/>
-//margin-top: 2035px;
-
-*/
-//<h1>PLANT SHELF</h1>
-
 export default function PlantShelf(props) {
   return (
   <>     
       <Container>
             <Grid>
+              <Records>
             {props && props.articles
                   ? props.articles.map((item) => {
-                    // console.log(item)
+                    console.log(item)
                       return (
                           <ArticleCard
-                          // article_float = "green"
-                          article_color={item.article_color}
-                          article_title={item.article_title}
-                          article_byline={item.article_byline}
-                          article_image={item.article_image}
-                          article_url={item.article_url}
+                            article_color={item.article_color}
+                            article_title={item.article_title}
+                            article_byline={item.article_byline}
+                            article_image={item.article_image}
+                            article_url={item.article_url}
                           />
                       );
                   })
               : null}
+              </Records>
             </Grid>
             <Shelf>
             <h1></h1>

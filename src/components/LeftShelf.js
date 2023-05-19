@@ -61,7 +61,7 @@ const CardMargin = styled.div`
   margin-left: 0px;
 `;
 
-const RECORD_COLORS = ["brown", "black"];
+// const RECORD_COLORS = ["brown", "black"];
 
 export default function LeftShelf({ articles }) {
   return (
@@ -70,7 +70,7 @@ export default function LeftShelf({ articles }) {
       <RecordsGrid>
         <Records>
           {articles.map((article, index) => {
-            let color = RECORD_COLORS[index];
+            // let color = RECORD_COLORS[index];
             return (
               <CardMargin>
                 <ArticleCard
@@ -78,14 +78,14 @@ export default function LeftShelf({ articles }) {
                   article_image={article.article_image}
                   article_url={article.article_url}
                   article_byline={article.article_byline}
-                  article_color={color}
+                  article_color={article.article_color}
                 />
               </CardMargin>
             );
           })}
         </Records>
       </RecordsGrid>
-        <Shelf />
+      <Shelf />
       {/* </ShelfContainer> */}
     </Container>
   );
