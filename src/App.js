@@ -62,7 +62,6 @@ function App() {
         <Header/>
           <Landing landing_image={data.landing_image} landing_credits={data.landing_credits}/>
           <Container>
-            YOU ARE ON DESKTOP VIEW
             <Blurb description_text={data.description_text}/>
             <PlantShelf articles={data.shelf_stories}/>
             <RightShelf articles={data.right_stories_1} />

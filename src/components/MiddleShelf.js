@@ -1,26 +1,49 @@
 import styled from 'styled-components'
 import React from 'react';
+import ArticleCard from "./ArticleCard.js";
 
 const Container = styled.div`
-    display:flex;
-    flex-direction: column;
+    max-width: 100vw;
+    position: relative;
+    overflow: visible;
+    height: 20em;
+    margin-top: 15em;
+    margin-bottom: 10em;
 `
 
-const Vinyls = styled.div`
-    display: flex;
-    width: 60%;
-    margin: auto;
-    justify-content: space-around;
-    flex-direction: row;  
-    height: fit-content;
-`
+// const Vinyls = styled.div`
+//     display: flex;
+//     width: 60%;
+//     margin: auto;
+//     justify-content: space-around;
+//     flex-direction: row;  
+//     height: fit-content;
+// `
+
+const RecordsGrid = styled.div`
+  display: flex;
+  width: 60%;
+  margin: auto;
+  justify-content: space-around;
+  flex-direction: row;  
+  height: fit-content;
+`;
+
+const Records = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  gap: 20em;
+`;
 
 const Shelf = styled.div`
-  width: 60%;
-  height: 5vh;
+  width: 80%;
+  height: 2.25em;
   background-color: #C08E5F;
   margin: auto;
   border: 2px solid #866B52;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `;
 
 /*
@@ -33,26 +56,26 @@ color={item.color}
 />
 */
 
-const MiddleShelf = (props) => {
+const MiddleShelf = ({articles}) => {
   return (
-    <React.Fragment>
-        <Container>
-        <Vinyls>
-
-            {props && props.articles
-                  ? props.articles.map((item) => {
-                      return (
-                        <div>
-                      <h1>This is where the card would go</h1>
-                      </div>
-                      );
-                  })
-            : null}
-
-        </Vinyls>
-        <Shelf/>
-        </Container>
-    </React.Fragment>
+    <Container>
+      <RecordsGrid>
+        <Records>
+          {articles.map((article, index) => {
+            return (
+                <ArticleCard
+                  article_title={article.article_title}
+                  article_image={article.article_image}
+                  article_url={article.article_url}
+                  article_byline={article.article_byline}
+                  article_color={article.article_color}
+                />
+            );
+          })}
+        </Records>
+      </RecordsGrid>
+      <Shelf />
+    </Container>
   )
 }
 
