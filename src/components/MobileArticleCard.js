@@ -26,12 +26,12 @@ const Background = styled.img`
 `
 
 const Image = styled.img`
-  height: 125px;
-  width: 125px;
-  object-fit: cover;
+  height: 129px;
+  width: 128px;
+  /* object-fit: cover; */
   position: absolute;
-  left: 0.7em;
-  top: 0.25em;
+  left: 0.58em;
+  top: 0.17em;
 `
 
 const Info = styled.div`
