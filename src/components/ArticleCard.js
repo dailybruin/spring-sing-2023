@@ -25,12 +25,12 @@ const Background = styled.img`
 `
 
 const Image = styled.img`
-  height: 217px;
-  width: 214px;
+  height: 219px;
+  width: 219px;
   object-fit: cover;
   position: absolute;
-  left: 0.7em;
-  top: 0.25em;
+  left: 0.5em;
+  top: 0.23em;
 `
 
 const Info = styled.div`
@@ -40,11 +40,11 @@ const Info = styled.div`
   ${Container}:hover & {
     display: inline-block;
     position: absolute;
-    left: 0.7em;
-    top: 0.25em;
+    left: 0.5em;
+    top: 0.23em;
     z-index: 15;
-    height: 217px;
-    width: 215px;
+    height: 219px;
+    width: 219px;
     background-color: rgba(101,101,101,0.9);
   }
 `

@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { mediaQueries } from "../shared/config";
 import Box from "../images/credit_border.svg";
+import RecordPlayer from "../images/recordPlayer.mp4"
 
 
 const Container = styled.div`
@@ -10,7 +11,7 @@ const Container = styled.div`
   position: relative;
 `
 
-const Illo = styled.img`
+const Illo = styled.video`
     width: 100vw;
     object-fit: cover;
     
@@ -57,11 +58,15 @@ const Credits = styled.div`
 export default function Landing(props) {
     return (
       <Container>
-        <Illo src={props.landing_image}></Illo>
+        <Illo  muted autoplay playsinline controls>
+          <source src={RecordPlayer} type="video/mp4"/>
+        </Illo>
+        
         <CreditsContainer>
           <CreditsImage src={Box}/>
           <Credits>{props.landing_credits}</Credits>
         </CreditsContainer>
       </Container>
     );
+    
 }

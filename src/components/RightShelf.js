@@ -65,7 +65,7 @@ const Records = styled.div`
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: 20em; /* Added gap for horizontal spacing */
-  position: relative;
+  /* position: relative; */
   margin-right: 5em;
 `;
 
